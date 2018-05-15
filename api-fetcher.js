@@ -29,4 +29,4 @@ async function uploadVideo(video) {
       }
     }
 
-  default export { getVideo, uploadVideo };
+export default { getVideo, uploadVideo };
