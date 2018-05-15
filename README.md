@@ -1,6 +1,31 @@
 # VidStitch - App
 
-TODO: short project description, some sample screenshots or mockups
+## Project Description and Mockups
+
+VidStitch is a social media application that allows users to quickly share authentic videos with groups of close friends. The application moves beyond large "liking" platforms that pressure people to create an inauthentic user persona in order to impress hundreds or thousands of followers. In contrast, Vidstitch allows people to combine multiple short videos into a compilation to share with trusted friends, without the pressure of curating a certain image. 
+
+The home screen will allow users to record and edit videos on the main recording page. By tapping and dragging each video, the user can "stitch" together multiple videos and make a single, shareable compilation. The application will also have a feed where a user can view their friends' posts, and a profile page where they can see a library of their previous posts.
+
+Below are some mockups of the application: 
+
+* When a user opens the screen and tries to take their first video, they will see the following screen: 
+
+![](./img/editor.png)
+
+* If a user wants to take a second video, they will see the thumbnail for their previous videos in a stream next to their face. 
+
+![](./img/editor2.png)
+
+* If a user wants to edit a video they can click on the thumbnail. An editing screen will appear. 
+
+![](./img/editorOnClick.png)
+
+![](./img/editClip.png)
+
+* When a user moves to their feed by swiping left, they will see videos posted by their friends. 
+
+![](./img/Feed.png)
+
 
 ## Architecture
 
@@ -41,4 +66,4 @@ TODO: how to deploy the project
 
 ## Acknowledgments
 
-Here we will thank our families, friends, and Tim.
+We thank our families, friends, and Tim.

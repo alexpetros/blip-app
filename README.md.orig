@@ -1,0 +1,29 @@
+# VidStitch - App
+
+VidStitch is a social media application that allows users to quickly share authentic videos with groups of close friends. The application moves beyond large "liking" platforms that pressure people to create an inauthentic user persona in order to impress hundreds or thousands of followers. In contrast, Vidstitch allows people to combine multiple short videos into a compilation to share with trusted friends, without the pressure of
+
+TODO: short project description, some sample screenshots or mockups
+
+## Architecture
+
+TODO:  descriptions of code organization and tools and libraries used
+
+## Setup
+
+TODO: how to get the project dev environment up and running, npm install etc
+
+## Deployment
+
+TODO: how to deploy the project
+
+## Authors
+
+* Steven Chun
+* Alex Petros
+* Taggart Bonham
+* Milan Chuttani
+* Imanol Avendaño
+
+## Acknowledgments
+
+Here we will thank our families, friends, and Tim.
