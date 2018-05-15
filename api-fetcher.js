@@ -1,17 +1,28 @@
 const API_URL = 'video stitch';
 
-async function getVideo() {
+// generic get function
+async function get() {
   try {
-    let response = await fetch(
-      `${API_URL}/videos`
-    );
+    let response = await fetch(`${API_URL}`);
     let responseJson = await response.json();
-    return responseJson.finstas;
+    return responseJson;
   } catch (error) {
     console.error(error);
   }
 }
 
+// get function - retrieves video
+async function getVideo() {
+  try {
+    let response = await fetch(`${API_URL}/videos`);
+    let responseJson = await response.json();
+    return responseJson.videos;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// post function - uploads video
 async function uploadVideo(video) {
   try {
     let response = await fetch(`${API_URL}/videos`, {
