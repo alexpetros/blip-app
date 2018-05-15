@@ -25,3 +25,7 @@ TODO: how to deploy the project
 ## Acknowledgments
 
 Here we will thank our families, friends, and Tim.
+
+## Acknowledgments
+
+Here we will thank our families, friends, and Tim. 
