@@ -27,9 +27,12 @@ Below are some mockups of the application:
 ![](./img/Feed.png)
 
 
+### Current progess
+Hits the backend and retrieves a 'Hello World!'
+
 ## Architecture
 
-We used the react-native starter-kit from the extra credit short assignment. For making api-requests, we used react-native's Fetch API.
+We used the react-native starter-kit from the extra credit short assignment. For making api requests, we used react-native's Fetch API.
 
 ### Concept
 This is a real-time video editing and sharing application. The editing and viewing is done on a mobile device. The splicing, storing, and returning of the videos, users, and posts is done on a backend server.
@@ -40,21 +43,20 @@ This is a real-time video editing and sharing application. The editing and viewi
 The project consists of several related components:
 
 #### React-Native App
-The mobile application is built on [React Native](https://facebook.github.io/react-native/). It will handle the user-facing functionality including registering, editing, posting, and commenting on friend's posts. The video editing will be done in-app using [React-Native Video Processing](https://github.com/shahen94/react-native-video-processing). The navigation between components will be built on [React Native](https://facebook.github.io/react-native/), and the `FETCH/POST` calls will be handled with various [React](https://reactjs.org/) libraries such as [Axios](https://github.com/axios/axios).
+The mobile application is built on React Native. It will handle the user-facing functionality including registering, editing, posting, and commenting on friend's posts. The video editing will be done in-app using [React-Native Video](https://github.com/shahen94/react-native-video-processing) Processing. The navigation between components will be built on React Native, and the `FETCH/POST` calls will be handled with various React libraries such as Axios.
 
 #### Flask Server
-The backend relies on a [Flask server](http://flask.pocoo.org/) and uses various [python](https://www.python.org/) libraries for stitching and properly formatting the videos into a single video object to be stored in the [Amazon S3](https://aws.amazon.com/s3/) cloud. This server will handle the user registration, friending logic, as well as manage the `FETCH/POST` calls from the app.
+The backend relies on a Flask server, and uses various python libraries for stitching and properly formatting the videos into a single video object to be stored in the Amazon S3 cloud. This server will handle the user registration, friending logic, as well as manage the `FETCH/POST` calls from the app.
 
 #### Amazon S3 Server
-The final cut, completely processed video objects will be stored in the [Amazon S3](https://aws.amazon.com/s3/) cloud. The [S3](https://aws.amazon.com/s3/) server will be able to handle `FETCH/POST` calls to video objects.
+The final cut, completely processed video objects will be stored in the Amazon S3 cloud. The S3 server will be able to handle `FETCH/POST` calls to video objects.
 
 ## Setup
+Be sure to run `yarn` to install all dependencies.
 
-TODO: how to get the project dev environment up and running, npm install etc
+Then run `exp start` to get the main app compiled. You're welcome to view it however you like, but for simplicity's sake we're testing with `exp ios`.
 
-## Deployment
-
-TODO: how to deploy the project
+Requires the background server running.
 
 ## Authors
 
@@ -63,6 +65,7 @@ TODO: how to deploy the project
 * Taggart Bonham
 * Milan Chuttani
 * Imanol Avendaño
+* Stephen Liao
 
 ## Acknowledgments
 
