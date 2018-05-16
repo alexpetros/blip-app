@@ -1,12 +1,13 @@
 # VidStitch - App
 
 TODO: short project description, some sample screenshots or mockups
+
 ### Current progess
 Hits the backend and retrieves a 'Hello World!'
 
 ## Architecture
 
-We used the react-native starter-kit from the extra credit short assignment. For making api-requests, we used react-native's Fetch API.
+We used the react-native starter-kit from the extra credit short assignment. For making api requests, we used react-native's Fetch API.
 
 ### Concept
 This is a real-time video editing and sharing application. The editing and viewing is done on a mobile device. The splicing, storing, and returning of the videos, users, and posts is done on a backend server.
