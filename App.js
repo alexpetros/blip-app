@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
+import { getResponse } from './api-fetcher';
+
+export default class App extends Component {
+  constructor(props) {
+    super();
+
+    this.state = {
+      text: 'loading',
+    };
+  }
+
+  componentDidMount() {
+    getResponse().then((res) => {
+      this.setState({ text: res.text });
+    });
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Text>{this.state.text}</Text>
       </View>
     );
   }
