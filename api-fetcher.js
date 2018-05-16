@@ -1,10 +1,10 @@
-const API_URL = 'video stitch';
+const API_URL = 'http://localhost:5000';
 
 // generic get function
-async function get() {
+export async function getResponse() {
   try {
-    let response = await fetch(`${API_URL}`);
-    let responseJson = await response.json();
+    const response = await fetch(`${API_URL}`);
+    const responseJson = await response.json();
     return responseJson;
   } catch (error) {
     console.error(error);
@@ -12,10 +12,10 @@ async function get() {
 }
 
 // get function - retrieves video
-async function getVideo() {
+export async function getVideo() {
   try {
-    let response = await fetch(`${API_URL}/videos`);
-    let responseJson = await response.json();
+    const response = await fetch(`${API_URL}/videos`);
+    const responseJson = await response.json();
     return responseJson.videos;
   } catch (error) {
     console.error(error);
@@ -23,21 +23,22 @@ async function getVideo() {
 }
 
 // post function - uploads video
-async function uploadVideo(video) {
+export async function uploadVideo(video) {
   try {
-    let response = await fetch(`${API_URL}/videos`, {
+    return await fetch(
+      `${API_URL}/videos`,
+      {
         method: 'POST',
         headers: {
-          'Accept': 'application/json',
+          Accept: 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          video
+          video,
         }),
-      }
-      catch (error) {
-        console.error(error);
-      }
-    }
-
-export default { getVideo, uploadVideo };
+      },
+    );
+  } catch (error) {
+    console.error(error);
+  }
+}
