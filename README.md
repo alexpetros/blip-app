@@ -18,7 +18,7 @@ This is a real-time video editing and sharing application. The editing and viewi
 The project consists of several related components:
 
 #### React-Native App
-The mobile application is built on React Native. It will handle the user-facing functionality including registering, editing, posting, and commenting on friend's posts. The video editing will be done in-app using React-Native Video Processing. The navigation between components will be built on React Native, and the `FETCH/POST` calls will be handled with various React libraries such as Axios.
+The mobile application is built on React Native. It will handle the user-facing functionality including registering, editing, posting, and commenting on friend's posts. The video editing will be done in-app using [React-Native Video](https://github.com/shahen94/react-native-video-processing) Processing. The navigation between components will be built on React Native, and the `FETCH/POST` calls will be handled with various React libraries such as Axios.
 
 #### Flask Server
 The backend relies on a Flask server, and uses various python libraries for stitching and properly formatting the videos into a single video object to be stored in the Amazon S3 cloud. This server will handle the user registration, friending logic, as well as manage the `FETCH/POST` calls from the app.
@@ -40,6 +40,7 @@ Requires the background server running.
 * Taggart Bonham
 * Milan Chuttani
 * Imanol Avendaño
+* Stephen Liao
 
 ## Acknowledgments
 
