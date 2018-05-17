@@ -1,37 +1,26 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import MainTabBar from './navigation/main_tab_bar';
+// import { getResponse } from './apiFetcher';
 
-import { getResponse } from './api-fetcher';
+
+// disable really annoying in app warnings
+console.disableYellowBox = true;
+
+// TODO: reimplement server functionality
 
 export default class App extends Component {
   constructor(props) {
     super();
-
-    this.state = {
-      text: 'loading',
-    };
   }
 
   componentDidMount() {
-    getResponse().then((res) => {
-      this.setState({ text: res.text });
-    });
+    // TODO: when server is up reimplement fetch
+    // getResponse().then((res) => {
+    //   this.setState({ text: res.text });
+    // });
   }
 
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>{this.state.text}</Text>
-      </View>
-    );
+    return <MainTabBar />;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
