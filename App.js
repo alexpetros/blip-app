@@ -14,7 +14,7 @@ export default class App extends Component {
 
   componentDidMount() {
     getResponse().then((res) => {
-      this.setState({ text: res.text });
+      this.setState({ text: res });
     });
   }
 
