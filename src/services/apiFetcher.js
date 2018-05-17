@@ -1,4 +1,4 @@
-import 'isomorphic-fetch'; // temporary fix, fetch should be globally available - ask Tim
+import fetch from 'isomorphic-fetch'; // temporary fix, fetch should be globally available - ask Tim
 
 const API_URL = 'http://localhost:5000';
 

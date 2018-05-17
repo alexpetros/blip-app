@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { getResponse } from './apiFetcher';
+import { getResponse } from './src/services/apiFetcher';
 
 export default class App extends Component {
   constructor(props) {
