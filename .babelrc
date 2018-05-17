@@ -1,0 +1,10 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    ["transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }
+    ]
+  ]
+}
