@@ -2,7 +2,8 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "unit-tests": "jest",
+    "test": "./node_modules/.bin/eslint src"
   },
   "dependencies": {
     "expo": "^27.0.1",
