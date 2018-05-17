@@ -37,6 +37,12 @@ We used the react-native starter-kit from the extra credit short assignment. For
 ### Concept
 This is a real-time video editing and sharing application. The editing and viewing is done on a mobile device. The splicing, storing, and returning of the videos, users, and posts is done on a backend server.
 
+### Mockups
+![mockups](img/mockups.png)
+* note that Editor is actually the main screen
+
+![comments](img/comments.png)
+
 ### Components
 ![architecture diagram](img/architecture.png)
 
@@ -52,11 +58,21 @@ The backend relies on a Flask server, and uses various python libraries for stit
 The final cut, completely processed video objects will be stored in the Amazon S3 cloud. The S3 server will be able to handle `FETCH/POST` calls to video objects.
 
 ## Setup
-Be sure to run `yarn` to install all dependencies.
+### Global installs
+You will need an http://expo.io account if you do not already have one. 
 
-Then run `exp start` to get the main app compiled. You're welcome to view it however you like, but for simplicity's sake we're testing with `exp ios`.
+`brew install node` 
 
-Requires the background server running.
+`brew install watchman`
+
+`npm install -g exp`
+
+### Environment setup
+Be sure to run `yarn` to install all dependencies, and install the latest version of xcode.
+
+Make sure you have the API running, then run `exp start` to get the main app compiled. 
+
+You're welcome to view the app however you like, but for simplicity's sake we're testing with `exp ios`, which you should run in a separate terminal tab. If you restart the simulator, make sure to Cmd+Q the actual simulator from your desktop before attempting to reload it.
 
 ## Authors
 
