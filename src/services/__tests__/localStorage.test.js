@@ -1,5 +1,5 @@
 import { saveUser } from '../localStorage';
-import MockStorage from '../__mocks__/MockStorage';
+import MockStorage from '../__mocks__/mockStorage';
 
 'use strict'; // eslint-disable-line
 
