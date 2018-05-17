@@ -12,6 +12,12 @@ We used the react-native starter-kit from the extra credit short assignment. For
 ### Concept
 This is a real-time video editing and sharing application. The editing and viewing is done on a mobile device. The splicing, storing, and returning of the videos, users, and posts is done on a backend server.
 
+### Mockups
+![mockups](img/mockups.png)
+* note that Editor is actually the main screen
+
+![comments](img/comments.png)
+
 ### Components
 ![architecture diagram](img/architecture.png)
 
