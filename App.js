@@ -1,37 +1,15 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import MainTabBar from './navigation/main_tab_bar';
 
-import { getResponse } from './src/services/apiFetcher';
+// disable really annoying in app warnings
+console.disableYellowBox = true;
 
 export default class App extends Component {
   constructor(props) {
     super();
-
-    this.state = {
-      text: 'loading',
-    };
-  }
-
-  componentDidMount() {
-    getResponse().then((res) => {
-      this.setState({ text: res });
-    });
   }
 
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>{this.state.text}</Text>
-      </View>
-    );
+    return <MainTabBar />;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
