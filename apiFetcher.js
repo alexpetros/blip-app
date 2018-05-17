@@ -1,3 +1,5 @@
+import 'isomorphic-fetch'; // temporary fix, fetch should be globally available - ask Tim
+
 const API_URL = 'http://localhost:5000';
 
 // generic get function
@@ -5,7 +7,7 @@ export async function getResponse() {
   try {
     const response = await fetch(`${API_URL}`);
     const responseJson = await response.json();
-    return responseJson;
+    return responseJson.text;
   } catch (error) {
     console.error(error);
   }

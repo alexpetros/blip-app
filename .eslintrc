@@ -4,7 +4,8 @@
     "env": {
         "node": true,
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest/globals": true
     },
     "rules": {
         "strict": 0,
@@ -37,10 +38,16 @@
         "class-methods-use-this": 0,
         "no-use-before-define": [2, { "variables": false }],
         "import/no-extraneous-dependencies": 0,
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
         consistent-return: 0,
     },
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ],
     "parserOptions": {
         "ecmaFeatures": {
