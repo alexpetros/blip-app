@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 class Capture extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={styles.image}
-          source={{ uri: 'https://facebook.github.io/react/logo-og.png' }}
-        />
         <Text>
-          This app was written in React-Native.
+          This is gonna have a super sleek video editor, I PROMISE.
         </Text>
       </View>
     );
